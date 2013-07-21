@@ -1,0 +1,43 @@
+---
+abstract: 'Class representing file on git repository'
+author:
+  - 'Masayuki Matsuki <y.songmu@gmail.com>'
+build_requires:
+  ExtUtils::MakeMaker: 6.59
+configure_requires:
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.5.6, CPAN::Meta::Converter version 2.120921'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Git-Repository-FileHistory
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+provides:
+  Git::Repository::FileHistory:
+    file: lib/Git/Repository/FileHistory.pm
+    version: 0.01
+  Git::Repository::Plugin::FileHistory:
+    file: lib/Git/Repository/Plugin/FileHistory.pm
+    version: 0.01
+requires:
+  Git::Repository: 0
+  perl: 5.008001
+resources:
+  bugtracker: https://github.com/Songmu/Git-Repository-FileHistory/issues
+  homepage: https://github.com/Songmu/Git-Repository-FileHistory
+  repository: git://github.com/Songmu/Git-Repository-FileHistory.git
+version: 0.01
+x_contributors:
+  - 'Matsuki Masayuki <matsuki-masayuki@kayac.com>'
