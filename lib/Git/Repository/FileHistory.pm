@@ -2,7 +2,7 @@ package Git::Repository::FileHistory;
 use strict;
 use warnings;
 use 5.008001;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Git::Repository::Log::Iterator;
 
@@ -45,6 +45,10 @@ sub created_at {
 sub last_modified_at {
     my $last = shift->last_log;
     $last && $last->author_gmtime;
+}
+{
+    no warnings 'once';
+    *updated_at = *last_modified_at;
 }
 
 sub created_by {
