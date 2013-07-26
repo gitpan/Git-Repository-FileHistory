@@ -46,6 +46,7 @@
       "runtime" : {
          "requires" : {
             "Git::Repository" : "0",
+            "parent" : "0",
             "perl" : "5.008001"
          }
       }
@@ -53,11 +54,11 @@
    "provides" : {
       "Git::Repository::FileHistory" : {
          "file" : "lib/Git/Repository/FileHistory.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       },
       "Git::Repository::Plugin::FileHistory" : {
          "file" : "lib/Git/Repository/Plugin/FileHistory.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -71,7 +72,7 @@
          "web" : "https://github.com/Songmu/Git-Repository-FileHistory"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_contributors" : [
       "Matsuki Masayuki <matsuki-masayuki@kayac.com>"
    ]
