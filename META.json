@@ -4,8 +4,10 @@
       "Masayuki Matsuki <y.songmu@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.5.6",
-   "license" : "perl_5",
+   "generated_by" : "Minilla/v0.11.0",
+   "license" : [
+      "perl_5"
+   ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
@@ -19,7 +21,8 @@
          "share",
          "eg",
          "examples",
-         "author"
+         "author",
+         "builder"
       ]
    },
    "prereqs" : {
@@ -46,6 +49,7 @@
       "runtime" : {
          "requires" : {
             "Git::Repository" : "0",
+            "Git::Repository::Plugin::Log" : "0",
             "parent" : "0",
             "perl" : "5.008001"
          }
@@ -54,11 +58,11 @@
    "provides" : {
       "Git::Repository::FileHistory" : {
          "file" : "lib/Git/Repository/FileHistory.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       },
       "Git::Repository::Plugin::FileHistory" : {
          "file" : "lib/Git/Repository/Plugin/FileHistory.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       }
    },
    "release_status" : "stable",
@@ -72,8 +76,9 @@
          "web" : "https://github.com/Songmu/Git-Repository-FileHistory"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_contributors" : [
-      "Matsuki Masayuki <matsuki-masayuki@kayac.com>"
+      "Matsuki Masayuki <matsuki-masayuki@kayac.com>",
+      "Takuya Tsuchida <takuya.tsuchida@gmail.com>"
    ]
 }

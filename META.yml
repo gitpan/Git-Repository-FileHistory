@@ -9,7 +9,7 @@ configure_requires:
   CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Minilla/v0.5.6, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Minilla/v0.11.0, CPAN::Meta::Converter version 2.132510'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,21 +24,24 @@ no_index:
     - eg
     - examples
     - author
+    - builder
 provides:
   Git::Repository::FileHistory:
     file: lib/Git/Repository/FileHistory.pm
-    version: 0.03
+    version: 0.04
   Git::Repository::Plugin::FileHistory:
     file: lib/Git/Repository/Plugin/FileHistory.pm
-    version: 0.03
+    version: 0.04
 requires:
   Git::Repository: 0
+  Git::Repository::Plugin::Log: 0
   parent: 0
   perl: 5.008001
 resources:
   bugtracker: https://github.com/Songmu/Git-Repository-FileHistory/issues
   homepage: https://github.com/Songmu/Git-Repository-FileHistory
   repository: git://github.com/Songmu/Git-Repository-FileHistory.git
-version: 0.03
+version: 0.04
 x_contributors:
   - 'Matsuki Masayuki <matsuki-masayuki@kayac.com>'
+  - 'Takuya Tsuchida <takuya.tsuchida@gmail.com>'
