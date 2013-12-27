@@ -1,5 +1,8 @@
 Revision history for Perl extension Git::Repository::FileHistory
 
+0.05 2013-12-27T02:49:40Z
+        - fix deps again
+
 0.04 2013-12-27T02:42:18Z
         - fix deps only (tsucchi++)
 
